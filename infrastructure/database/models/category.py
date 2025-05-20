@@ -10,5 +10,5 @@ from sqlalchemy.orm import Mapped, mapped_column
 
 class Category(Base, IntIdPxMixin):
     name: Mapped[str] = mapped_column(String(50))
-    created_at: Mapped[datetime]
-    updated_at: Mapped[datetime]
+    created_at: Mapped[created_at]
+    updated_at: Mapped[updated_at]
